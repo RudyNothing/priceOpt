@@ -1,0 +1,165 @@
+/* frontend/src/components/ProductCard.css */
+
+.product-card {
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 18px;
+
+  padding: 28px;
+
+  margin-top: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.product-header {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-bottom: 18px;
+}
+
+
+.product-image {
+
+  width: 100px;
+  height: 100px;
+
+  object-fit: contain;
+
+  border-radius: 12px;
+
+  background: white;
+
+  padding: 8px;
+}
+
+.product-title {
+  font-size: 1.45rem;
+
+  color: #111827;
+
+  margin-bottom: 18px;
+}
+
+.best-deal {
+  margin-bottom: 20px;
+
+  font-size: 1rem;
+
+  color: #374151;
+}
+
+.best-deal span {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.savings {
+  margin-top: 8px;
+
+  color: #dc2626;
+
+  font-weight: bold;
+
+  font-size: 0.95rem;
+}
+
+.comparison-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+}
+
+.comparison-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  padding: 16px;
+
+  border-radius: 12px;
+
+  background-color: #f9fafb;
+
+  transition: 0.2s ease;
+}
+
+.comparison-item:hover {
+  background-color: #eef2ff;
+}
+
+.platform {
+  font-weight: bold;
+
+  color: #111827;
+
+  width: 120px;
+}
+
+.price {
+  color: #16a34a;
+
+  font-weight: bold;
+}
+
+.rating {
+  color: #f59e0b;
+}
+
+.view-link {
+  color: #2563eb;
+
+  font-weight: bold;
+
+  transition: 0.2s ease;
+}
+
+.view-link:hover {
+  color: #1d4ed8;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .comparison-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .platform {
+    width: auto;
+  }
+  .product-header {
+
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
